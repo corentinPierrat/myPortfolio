@@ -7,20 +7,41 @@ type NavbarProps = {
   icon : React.ElementType;
   text: string;
   separator?: boolean;
+  external?: boolean;
 }
 
-const NavLink = ({ href, icon: Icon, text, separator = false } : NavbarProps) => (
-  <>
-  <Link
-    href={href}
-    className="flex items-center gap-2 px-4 py-2 rounded-full text-gray-300 hover:text-white hover:bg-white/10 transition-all duration-300"
-  >
-    <Icon size={20} />
-    <span className="hidden sm:inline">{text}</span>
-    </Link>
-    {separator && <div className="h-4 w-px bg-white/20" />}
-  </>
-);
+const NavLink = ({ href, icon: Icon, text, separator = false, external = false } : NavbarProps) => {
+  if (external) {
+    return (
+      <>
+        <a
+          href={href}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center gap-2 px-4 py-2 rounded-full text-gray-300 hover:text-white hover:bg-white/10 transition-all duration-300"
+        >
+          <Icon size={20} />
+          <span className="hidden sm:inline">{text}</span>
+        </a>
+        {separator && <div className="h-4 w-px bg-white/20" />}
+      </>
+    );
+  }
+
+  // Sinon, on utilise Link de Next.js
+  return (
+    <>
+      <Link
+        href={href}
+        className="flex items-center gap-2 px-4 py-2 rounded-full text-gray-300 hover:text-white hover:bg-white/10 transition-all duration-300"
+      >
+        <Icon size={20} />
+        <span className="hidden sm:inline">{text}</span>
+      </Link>
+      {separator && <div className="h-4 w-px bg-white/20" />}
+    </>
+  );
+};
 
 const Navbar = () => {
   return (
@@ -31,7 +52,7 @@ const Navbar = () => {
           <NavLink href="/about" icon={User} text="À propos" separator={true} />
           <NavLink href="/projets" icon={Briefcase} text="Projets" separator={true}/>
           <NavLink href="/contact" icon={Mail} text="Contact" separator={true} />
-          <NavLink href="https://github.com/corentinPierrat" icon={Github} text="Github" />
+          <NavLink href="https://github.com/corentinPierrat" icon={Github} text="Github" external={true}/>
         </div>
       </nav>
     </div>
