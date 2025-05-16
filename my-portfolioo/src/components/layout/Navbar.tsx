@@ -28,7 +28,6 @@ const NavLink = ({ href, icon: Icon, text, separator = false, external = false }
     );
   }
 
-  // Sinon, on utilise Link de Next.js
   return (
     <>
       <Link

@@ -1,8 +1,8 @@
 import './globals.css';
-import Navbar from '../components/Navbar';
-import StageBanner from '../components/StageBanner';
+import Navbar from '../components/layout/Navbar';
+import StageBanner from '../components/layout/StageBanner';
 import { Inter } from 'next/font/google'
-import SocialLinks from '../components/SocialLinks';
+import Footer from '../components/layout/Footer';
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -25,17 +25,7 @@ export default function RootLayout({
           <Navbar />
         </header>
         <main>{children}</main>
-        <footer className="py-12 px-6 border-t border-white/10">
-          <div className="container mx-auto max-w-5xl">
-            <div className="flex flex-col md:flex-row justify-between items-center">
-              <div className="mb-6 md:mb-0">
-                <p className="text-xl font-bold">Corentin Pierrat</p>
-                <p className="text-gray-400 text-sm mt-1">© {new Date().getFullYear()} Tous droits réservés</p>
-              </div>
-              <SocialLinks />
-            </div>
-          </div>
-        </footer>
+          <Footer />
       </body>
     </html>
   );
