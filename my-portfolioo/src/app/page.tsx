@@ -1,7 +1,7 @@
 import HeroSection from "../components/home/HeroSection"
 import ProjectSection from "../components/home/ProjectSection"
 import AboutSection from "../components/home/AboutSection"
-import ContactSection from "../components/home/ContactSection";
+import ContactSection from "../components/common/ContactSection";
 
 export default function Home() {
   return (
@@ -9,7 +9,7 @@ export default function Home() {
       <HeroSection />
       <ProjectSection />
       <AboutSection />
-      <ContactSection />
+      <ContactSection title="Travaillons ensemble"/>
       </div>
   );
 }
