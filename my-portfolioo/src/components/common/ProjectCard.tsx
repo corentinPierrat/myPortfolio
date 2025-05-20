@@ -1,27 +1,21 @@
 import { ArrowRight } from "lucide-react"
 import Link from "next/link"
+import VideoModal from "./VideoModal";
 
 type ProjectCardProps = {
     title: string;
     description: string;
-    imageUrl: string;
+    videoUrl: string;
     tags: string[];
 }
 
-export default function ProjectCard({ title, description, imageUrl, tags }: ProjectCardProps) {
+export default function ProjectCard({ title, description, videoUrl, tags }: ProjectCardProps) {
     return (
         <div
             key={title}
             className="group relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm transition-all duration-300 hover:border-white/20 hover:bg-white/10"
             >
-            <div className="aspect-video w-full overflow-hidden">
-                <video
-                autoPlay
-                loop
-                src={imageUrl}
-                className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
-                />
-            </div>
+            <VideoModal videoUrl={videoUrl} />
             <div className="p-6">
                 <h3 className="text-xl font-bold mb-2">{title}</h3>
                 <p className="text-gray-300 mb-4">

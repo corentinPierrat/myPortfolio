@@ -20,13 +20,13 @@ export default function ProjectSection() {
             <ProjectCard
             title="Hacktivist"
             description="Un jeu RPG réalisé en équipe de 4 personnes en première année."
-            imageUrl="/RPGVIDEO.mp4"
+            videoUrl="/RPGVIDEO.mp4"
             tags={["C", "CSFML"]}
             />
             <ProjectCard
             title="Comparateur de tableaux de garantie"
             description="Projet réalisé lors d’un hackathon avec Harmonie Mutuelle: comparaison claire des offres santé. Prix du Jury."
-            imageUrl="/Harmonie.webm"
+            videoUrl="/Harmonie.webm"
             tags={["React", "Next.js"]}
             />
         </div>
