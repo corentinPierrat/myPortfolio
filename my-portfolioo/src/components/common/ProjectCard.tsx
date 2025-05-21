@@ -36,6 +36,7 @@ export default function ProjectCard({ title, description, videoUrl, tags, projec
                         href={projectUrl}
                         target="_blank"
                         rel="noopener noreferrer"
+                        aria-label="Voir le projet"
                         className="inline-flex items-center text-sm font-medium text-purple-400 hover:text-purple-300"
                     >
                         Voir le projet

@@ -28,6 +28,7 @@ export default function VideoModal({ videoUrl }: Props) {
         />
         <Button
           onClick={openModal}
+          aria-label='Open video'
           className="cursor-pointer absolute top-2 right-2 bg-black/60 text-white p-1 rounded-full hover:bg-black/80 transition"
         >
           <ZoomIn className="h-5 w-5" />
@@ -46,10 +47,11 @@ export default function VideoModal({ videoUrl }: Props) {
                 onClick={(e) => e.stopPropagation()}
             >
                 <Button
-                onClick={closeModal}
-                className="cursor-pointer absolute top-4 right-4 text-white bg-black/50 p-2 rounded-full hover:bg-black/80 transition"
+                  onClick={closeModal}
+                  className="cursor-pointer absolute top-4 right-4 text-white bg-black/50 p-2 rounded-full hover:bg-black/80 transition"
+                  aria-label='Close video'
                 >
-                <X className="h-6 w-6" />
+                  <X className="h-6 w-6" />
                 </Button>
                 <video
                 src={videoUrl}

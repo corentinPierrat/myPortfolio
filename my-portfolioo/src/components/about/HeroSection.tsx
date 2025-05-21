@@ -30,7 +30,7 @@ export default function HeroSection() {
                                 Actuellement étudiant en informatique, je suis à la recherche d&apos;un stage en développement informatique du 15 Septembre 2025 au 28 Février 2026.
                             </p>
                         </div>
-                        <a href="/pierrat_corentin_CV.pdf" download>
+                        <a aria-label="download pdf" href="/pierrat_corentin_CV.pdf" download>
                         <Button
                             variant={"outline"}
                             className="cursor-pointer rounded-full px-6 py-6 text-base font-medium bg-white/5 hover:bg-white/10 border border-white/10"

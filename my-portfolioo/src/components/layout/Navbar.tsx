@@ -18,6 +18,7 @@ const NavLink = ({ href, icon: Icon, text, separator = false, external = false }
           href={href}
           target="_blank"
           rel="noopener noreferrer"
+          aria-label={text}
           className="flex items-center gap-2 px-4 py-2 rounded-full text-gray-300 hover:text-white hover:bg-white/10 transition-all duration-300"
         >
           <Icon size={20} />
@@ -32,6 +33,7 @@ const NavLink = ({ href, icon: Icon, text, separator = false, external = false }
     <>
       <Link
         href={href}
+        aria-label={text}
         className="flex items-center gap-2 px-4 py-2 rounded-full text-gray-300 hover:text-white hover:bg-white/10 transition-all duration-300"
       >
         <Icon size={20} />
