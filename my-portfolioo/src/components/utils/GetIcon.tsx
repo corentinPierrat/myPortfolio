@@ -1,4 +1,4 @@
-import { Globe, Code, Server } from "lucide-react";
+import { Globe, Code, Server, Mail, Phone, MapPin } from "lucide-react";
 
 export function getIcon(name: string) {
   switch (name) {
@@ -8,6 +8,12 @@ export function getIcon(name: string) {
       return Globe;
     case "server":
       return Server;
+    case "mail":
+      return Mail;
+    case "phone":
+      return Phone;
+    case "mapPin":
+      return MapPin;
     default:
       return Code;
   }

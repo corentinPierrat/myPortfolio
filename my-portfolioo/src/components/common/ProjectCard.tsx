@@ -7,14 +7,15 @@ type ProjectCardProps = {
     description: string;
     videoUrl: string;
     tags: string[];
+    projectUrl?: string;
 }
 
-export default function ProjectCard({ title, description, videoUrl, tags }: ProjectCardProps) {
+export default function ProjectCard({ title, description, videoUrl, tags, projectUrl }: ProjectCardProps) {
     return (
         <div
             key={title}
             className="group relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm transition-all duration-300 hover:border-white/20 hover:bg-white/10"
-            >
+        >
             <VideoModal videoUrl={videoUrl} />
             <div className="p-6">
                 <h3 className="text-xl font-bold mb-2">{title}</h3>
@@ -31,14 +32,18 @@ export default function ProjectCard({ title, description, videoUrl, tags }: Proj
                     </span>
                 ))}
                 </div>
-                <Link
-                    href={`/work/project-${title}`}
-                    className="inline-flex items-center text-sm font-medium text-purple-400 hover:text-purple-300"
-                >
-                Voir le projet
-                <ArrowRight className="ml-1 h-4 w-4" />
-                </Link>
+                {projectUrl && (
+                    <a
+                        href={projectUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center text-sm font-medium text-purple-400 hover:text-purple-300"
+                    >
+                        Voir le projet
+                        <ArrowRight className="ml-1 h-4 w-4" />
+                    </a>
+                )}
             </div>
-            </div>
+        </div>
     );
 }

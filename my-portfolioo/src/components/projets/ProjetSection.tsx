@@ -6,7 +6,8 @@ export default function ProjectSection() {
             title: "Hacktivist",
             description: "Un jeu RPG réalisé en équipe de 4 personnes en première année.",
             videoUrl: "/RPGVIDEO.mp4",
-            tags: ["C", "CSFML"]
+            tags: ["C", "CSFML"],
+            projectUrl: "https://github.com/TheotimeCollier/MyRPG"
         },
         {
             title: "Comparateur de tableaux de garantie",
@@ -17,14 +18,23 @@ export default function ProjectSection() {
         {
             title: "Reproduction du jeu Jetpack Joyride",
             description: "Un projet de jeu vidéo, adaptée en version multijoueur en réseau. Il a été développé en C++.",
-            videoUrl: "/jetpack.webm",
-            tags: ["C++", "SFML"]
+            videoUrl: "/my_jetpack.webm",
+            tags: ["C++", "SFML"],
+            projectUrl: "https://github.com/corentinPierrat/Jetpack"
         },
         {
             title: "Site de réservation de salles pour l'espace de coworking BeePlex",
             description: "Un projet de site web de réservation de salles réalisé en stage dans l'entreprise BeeZim, réalisé en React et Flask.",
             videoUrl: "/reservation_beeplex.webm",
-            tags: ["React", "Flask", "Docker", "Gitlab CI/CD"]
+            tags: ["React", "Flask", "Docker", "Gitlab CI/CD"],
+            projectUrl: "https://reservation.beeplex.fr/"
+        },
+        {
+            title: "Mon Portfolio",
+            description: "Mon portfolio personnel, réalisé avec Next.js et Tailwind CSS.",
+            videoUrl: "/my_portfolio.webm",
+            tags: ["Next.js", "Tailwind CSS"],
+            projectUrl: "https://github.com/corentinPierrat/myPortfolio"
         }
     ]
     return (
@@ -38,6 +48,7 @@ export default function ProjectSection() {
                             description={project.description}
                             videoUrl={project.videoUrl}
                             tags={project.tags}
+                            projectUrl={project.projectUrl}
                         />
                     ))}
                 </div>

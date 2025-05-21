@@ -26,7 +26,7 @@ export default function HeroSection() {
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link href="projets">
-                  <Button className="bg-white text-black hover:bg-gray-200 rounded-full px-6 py-6 text-base font-medium">
+                  <Button className="cursor-pointer bg-white text-black hover:bg-gray-200 rounded-full px-6 py-6 text-base font-medium">
                     Voir mes projets
                     <ArrowRight className="ml-2 h-4 w-4" />
                   </Button>
@@ -34,7 +34,7 @@ export default function HeroSection() {
                 <Link href="contact">
                   <Button
                     variant="outline"
-                    className="border-white/10 bg-white/5 hover:bg-white/10 rounded-full px-6 py-6 text-base font-medium"
+                    className="cursor-pointer border-white/10 bg-white/5 hover:bg-white/10 rounded-full px-6 py-6 text-base font-medium"
                   >
                     Me contacter
                     <Mail className="ml-2 h-4 w-4" />

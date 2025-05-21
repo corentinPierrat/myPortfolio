@@ -31,7 +31,10 @@ export default function HeroSection() {
                             </p>
                         </div>
                         <a href="/pierrat_corentin_CV.pdf" download>
-                        <Button className="rounded-full px-6 py-6 text-base font-medium bg-white/5 hover:bg-white/10 border border-white/10">
+                        <Button
+                            variant={"outline"}
+                            className="cursor-pointer rounded-full px-6 py-6 text-base font-medium bg-white/5 hover:bg-white/10 border border-white/10"
+                        >
                             Télécharger mon CV
                             <Download className="ml-2 h-4 w-4" />
                         </Button>

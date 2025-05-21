@@ -34,7 +34,7 @@ export default function ProjectSection() {
             <Link href="projets">
             <Button
                 variant="outline"
-                className="border-white/10 bg-white/5 hover:bg-white/10 rounded-full px-6 py-6 text-base font-medium"
+                className="cursor-pointer border-white/10 bg-white/5 hover:bg-white/10 rounded-full px-6 py-6 text-base font-medium"
             >
                 Voir tous les projets
                 <ArrowRight className="ml-2 h-4 w-4" />

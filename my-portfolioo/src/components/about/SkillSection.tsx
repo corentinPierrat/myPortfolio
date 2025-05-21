@@ -11,7 +11,7 @@ export default function SkillSection() {
         {
           title: "Développement Web",
           icon: "globe",
-          skills: ["HTML/CSS", "React.js", "Next.js", "Tailwind CSS"],
+          skills: ["HTML/CSS", "React.js", "Next.js", "Tailwind CSS", "Python Flask"],
         },
         {
           title: "DevOps & Outils",

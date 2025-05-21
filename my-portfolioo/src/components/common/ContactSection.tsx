@@ -13,7 +13,7 @@ export default function ContactSection({title}: {title: string}) {
             (disponible de Septembre 2025 à Janvier 2026), je serais ravi d&apos;échanger avec vous.
             </p>
             <Link href="/contact">
-              <Button className="bg-white text-black hover:bg-gray-200 rounded-full px-6 py-6 text-base font-medium">
+              <Button className="cursor-pointer bg-white text-black hover:bg-gray-200 rounded-full px-6 py-6 text-base font-medium">
                 Me contacter
                 <Mail className="ml-2 h-4 w-4" />
               </Button>

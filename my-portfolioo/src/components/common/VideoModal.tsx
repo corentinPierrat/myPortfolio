@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import { createPortal } from 'react-dom';
 import { ZoomIn, X } from 'lucide-react';
+import { Button } from '../ui/button';
 
 type Props = {
   videoUrl: string;
@@ -16,7 +17,6 @@ export default function VideoModal({ videoUrl }: Props) {
 
   return (
     <>
-      {/* Thumbnail + Zoom Button */}
       <div className="relative aspect-video w-full overflow-hidden rounded-xl border border-white/10">
         <video
           src={videoUrl}
@@ -26,15 +26,14 @@ export default function VideoModal({ videoUrl }: Props) {
           playsInline
           className="h-full w-full object-cover"
         />
-        <button
+        <Button
           onClick={openModal}
-          className="absolute top-2 right-2 bg-black/60 text-white p-1 rounded-full hover:bg-black/80 transition"
+          className="cursor-pointer absolute top-2 right-2 bg-black/60 text-white p-1 rounded-full hover:bg-black/80 transition"
         >
           <ZoomIn className="h-5 w-5" />
-        </button>
+        </Button>
       </div>
 
-      {/* Portal for Modal */}
       {open &&
         typeof window !== 'undefined' &&
         createPortal(
@@ -46,12 +45,12 @@ export default function VideoModal({ videoUrl }: Props) {
                 className="relative w-full max-w-[90vw] max-h-[90vh] px-4"
                 onClick={(e) => e.stopPropagation()}
             >
-                <button
+                <Button
                 onClick={closeModal}
-                className="absolute top-4 right-4 text-white bg-black/50 p-2 rounded-full hover:bg-black/80 transition"
+                className="cursor-pointer absolute top-4 right-4 text-white bg-black/50 p-2 rounded-full hover:bg-black/80 transition"
                 >
                 <X className="h-6 w-6" />
-                </button>
+                </Button>
                 <video
                 src={videoUrl}
                 autoPlay
