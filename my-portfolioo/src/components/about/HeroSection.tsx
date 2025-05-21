@@ -17,7 +17,7 @@ export default function HeroSection() {
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-                    <ProfilCard src="/corentin.pierrat.JPG" />
+                    <ProfilCard src="/corentin.pierrat.jpg" />
                     <div className="text-left">
                         <h2 className="text-2xl font-bold mb-4">Qui suis-je?</h2>
                         <p className="text-gray-300 mb-4">

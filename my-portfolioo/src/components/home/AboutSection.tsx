@@ -13,7 +13,7 @@ export default function AboutSection() {
 
         <div className="container mx-auto max-w-5xl relative">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-            <ProfilCard src="/corentin.pierrat.JPG" />
+            <ProfilCard src="/corentin.pierrat.jpg" />
             <div>
               <Badge text="À propos de moi" />
               <h2 className="text-3xl md:text-4xl font-bold mb-6">
