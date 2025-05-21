@@ -119,7 +119,7 @@ export default function Form() {
             )}
             {error && (
                 <div className="text-red-500 text-sm mt-4">
-                    Une erreur s'est produite lors de l'envoi de votre message. Veuillez réessayer.
+                    Une erreur s&apos;est produite lors de l&apos;envoi de votre message. Veuillez réessayer.
                 </div>
             )}
         </form>
