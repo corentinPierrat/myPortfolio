@@ -58,7 +58,6 @@ export default function VideoModal({ videoUrl }: Props) {
                 autoPlay
                 loop
                 muted
-                controls
                 className="w-full h-[90vh] object-contain rounded-xl shadow-2xl"
                 />
             </div>
