@@ -35,6 +35,18 @@ export default function ProjectSection() {
             videoUrl: "/my_portfolio.webm",
             tags: ["Next.js", "Tailwind CSS"],
             projectUrl: "https://github.com/corentinPierrat/myPortfolio"
+        },
+        {
+            title: "AREA",
+            description: "Une application web et mobile zapier-like pour automatiser des tâches entre différents services.",
+            videoUrl: "/my_portfolio.webm",
+            tags: ["React", "Expo", "Python FASTAPI", "MariaDB", "Docker"],
+        },
+        {
+            title: "MyButcherApp",
+            description: " Application web de gestion des commandes pour une boucherie, permettant de saisir les commandes clients, de regrouper les produits par catégories et de générer une vue récapitulative destinée au laboratoire pour la préparation et l’impression des commandes.",
+            videoUrl: "/my_portfolio.webm",
+            tags: ["NextJS", "Tailwind CSS", "Python FASTAPI", "SQLite", "Docker"],
         }
     ]
     return (
