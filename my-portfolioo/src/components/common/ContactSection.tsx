@@ -10,7 +10,7 @@ export default function ContactSection({title}: {title: string}) {
             <h2 className="text-3xl md:text-4xl font-bold mb-6">{title}</h2>
             <p className="text-gray-300 max-w-2xl mx-auto mb-8">
             Que vous ayez un projet à réaliser ou une opportunité de stage à proposer
-            (disponible de Septembre 2025 à Janvier 2026), je serais ravi d&apos;échanger avec vous.
+            (disponible d'Avril 2026 à Juillet 2026), je serais ravi d&apos;échanger avec vous.
             </p>
             <Link href="/contact">
               <Button className="cursor-pointer bg-white text-black hover:bg-gray-200 rounded-full px-6 py-6 text-base font-medium">

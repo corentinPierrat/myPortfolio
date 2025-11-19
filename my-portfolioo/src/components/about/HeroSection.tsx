@@ -27,7 +27,7 @@ export default function HeroSection() {
                         </p>
                         <div className="rounded-xl bg-gradient-to-r from-purple-500/20 to-blue-500/20 p-4 border border-white/10 backdrop-blur-sm mb-6">
                             <p className="text-gray-300">
-                                Actuellement étudiant en informatique, je suis à la recherche d&apos;un stage en développement informatique du 15 Septembre 2025 au 28 Février 2026.
+                                Actuellement étudiant en informatique, je suis à la recherche d&apos;un stage en développement informatique d'Avril à Juillet.
                             </p>
                         </div>
                         <a aria-label="download pdf" href="/pierrat_corentin_CV.pdf" download>
