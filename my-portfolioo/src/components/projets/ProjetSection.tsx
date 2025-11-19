@@ -45,7 +45,7 @@ export default function ProjectSection() {
         {
             title: "MyButcherApp",
             description: " Application web de gestion des commandes pour une boucherie, permettant de saisir les commandes clients, de regrouper les produits par catégories et de générer une vue récapitulative destinée au laboratoire pour la préparation et l’impression des commandes.",
-            videoUrl: "/butcher_app.webm",
+            videoUrl: "/butcher-app.webm",
             tags: ["NextJS", "Tailwind CSS", "Tanstack", "Python FASTAPI", "SQLite", "Docker"],
         },
         {
