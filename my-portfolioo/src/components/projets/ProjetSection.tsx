@@ -39,14 +39,20 @@ export default function ProjectSection() {
         {
             title: "AREA",
             description: "Une application web et mobile zapier-like pour automatiser des tâches entre différents services.",
-            videoUrl: "/my_portfolio.webm",
+            videoUrl: "/area.webm",
             tags: ["React", "Expo", "Python FASTAPI", "MariaDB", "Docker"],
         },
         {
             title: "MyButcherApp",
             description: " Application web de gestion des commandes pour une boucherie, permettant de saisir les commandes clients, de regrouper les produits par catégories et de générer une vue récapitulative destinée au laboratoire pour la préparation et l’impression des commandes.",
-            videoUrl: "/my_portfolio.webm",
-            tags: ["NextJS", "Tailwind CSS", "Python FASTAPI", "SQLite", "Docker"],
+            videoUrl: "/butcher_app.webm",
+            tags: ["NextJS", "Tailwind CSS", "Tanstack", "Python FASTAPI", "SQLite", "Docker"],
+        },
+        {
+            title: "Zappy",
+            description: "Zappy est un jeu de simulation de stratégie multijoueur en temps réel développé dans le cadre du programme Epitech. Il simule un environnement compétitif où plusieurs joueurs contrôlés par l'IA interagissent sur une carte gérée par un serveur.",
+            videoUrl: "/zappy-trailer.mp4",
+            tags: ["C++","C", "Socket", "Python", "Docker"],
         }
     ]
     return (
